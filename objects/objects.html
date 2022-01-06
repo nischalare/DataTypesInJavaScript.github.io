@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+
+    <title>Objects</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="display-4">Objects</h1>
+        <p class="lead">
+          JavaScript is designed on a simple object-based paradigm. An object is
+          a collection of properties, and a property is an association between a
+          name (or key) and a value. A property's value can be a function, in
+          which case the property is known as a method. In addition to objects
+          that are predefined in the browser, you can define your own objects.
+          This chapter describes how to use objects, properties, functions, and
+          methods, and how to create your own objects.
+        </p>
+        <hr class="my-4" />
+        <p>In JavaScript, almost "everything" is an object.</p>
+        <ul>
+          <li>Booleans can be objects (if defined with the new keyword)</li>
+          <li>Numbers can be objects (if defined with the new keyword)</li>
+          <li>Strings can be objects (if defined with the new keyword)</li>
+          <li>Dates are always objects</li>
+          <li>Maths are always objects</li>
+          <li>Regular expressions are always objects</li>
+          <li>Arrays are always objects</li>
+          <li>Functions are always objects</li>
+          <li>Objects are always objects</li>
+        </ul>
+        <p>All JavaScript values, except primitives, are objects.</p>
+        <hr />
+        <h4>JavaScript Primitives</h4>
+        <p></p>
+        <p>A primitive value is a value that has no properties or methods.</p>
+        <p>A primitive data type is data that has a primitive value.</p>
+
+        <ul>
+          JavaScript defines 5 types of primitive data types:
+          <li>string</li>
+          <li>number</li>
+          <li>boolean</li>
+          <li>null</li>
+          <li>undefined</li>
+        </ul>
+        <p>
+          Primitive values are immutable (they are hardcoded and therefore
+          cannot be changed).
+        </p>
+        <p>
+          if x = 3.14, you can change the value of x. But you cannot change the
+          value of 3.14.
+        </p>
+        <hr />
+        <h4>Objects and properties</h4>
+        <p></p>
+        <p>
+          A JavaScript object has properties associated with it. A property of
+          an object can be explained as a variable that is attached to the
+          object. Object properties are basically the same as ordinary
+          JavaScript variables, except for the attachment to objects. The
+          properties of an object define the characteristics of the object. You
+          access the properties of an object with a simple dot-notation
+        </p>
+        <p>objectName.propertyName</p>
+        <p></p>
+        <hr />
+        <p>
+          Like all JavaScript variables, both the object name (which could be a
+          normal variable) and property name are case sensitive. You can define
+          a property by assigning it a value. For example, let's create an
+          object named myCar and give it properties named make, model, and year
+          as follows
+        </p>
+        <ul>
+          <li>const myCar = new Object();</li>
+          <li>myCar.make = 'Ford';</li>
+          <li>myCar.model = 'Mustang';</li>
+          <li>myCar.year = 1969;</li>
+        </ul>
+        <hr>
+        <p>The above example could also be written using an object initializer, which is a comma-delimited list of zero or more pairs of property names and associated values of an object, enclosed in curly braces ({})</p>
+        <p></p>
+       <ul>
+           <li>const myCar = {</li>
+           <li>&nbsp&nbsp make: 'Ford',</li>
+           <li>&nbsp&nbsp  model: 'Mustang',</li>
+           <li>&nbsp&nbsp  year: 1969</li>
+           <li>};</li>
+       </ul>
+       <hr>
+       <p>Unassigned properties of an object are undefined (and not null)</p>
+       <p>myCar.color; // undefined</p>
+       <hr>
+       <p>Properties of JavaScript objects can also be accessed or set using a bracket notation (for more details see property accessors).&nbsp&nbsp Objects are sometimes called associative arrays, since each property is associated with a string value that can be used to access it.&nbsp&nbsp So, for example, you could access the properties of the myCar object as follows</p>
+       <ul>
+           <li>myCar['make'] = 'Ford';</li>
+           <li>myCar['model'] = 'Mustang';</li>
+           <li>myCar['year'] = 1969;</li>
+       </ul>
+       <hr>
+
+        <a
+          class="btn btn-primary btn-lg"
+          href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects"
+          role="button"
+          >Objects</a
+        >
+        <hr>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
